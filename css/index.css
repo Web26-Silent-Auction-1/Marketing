@@ -1,0 +1,65 @@
+.navigation {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-end;
+  width: 45%;
+  font-size: 14px;
+  margin-left: 50%;
+}
+/*@mobile: ~"(max-width: 500px)";*/
+* {
+  box-sizing: border-box;
+}
+.container {
+  color: purple;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /*width: 1000px;*/
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-family: "Fredoka One";
+  letter-spacing: 1px;
+}
+.container-home {
+  padding-bottom: 5px;
+}
+.container-home img {
+  width: 100vw;
+  height: 200px;
+  padding: 10px;
+  align-content: center;
+}
+/*.content-container {
+}
+
+.top-content {
+}*/
+.button {
+  display: block;
+  background-color: navy;
+  cursor: pointer;
+  width: 100px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.button:hover {
+  color: green;
+}
+p .company-info {
+  width: 30%;
+}
