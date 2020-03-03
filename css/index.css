@@ -14,7 +14,7 @@
   box-sizing: border-box;
 }
 .container {
-  color: purple;
+  /*background-color: rgba(0, 0, 255, 0.3);*/
   position: absolute;
   margin: auto;
   top: 0;
@@ -23,7 +23,7 @@
   left: 0;
   /*width: 1000px;*/
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 h1 {
   font-family: "Fredoka One";
@@ -38,11 +38,12 @@ h1 {
   padding: 10px;
   align-content: center;
 }
-/*.content-container {
+.content-container {
+  width: 40%;
 }
-
-.top-content {
-}*/
+/*.top-content {
+}
+*/
 .button {
   display: block;
   background-color: navy;
@@ -60,6 +61,14 @@ h1 {
 .button:hover {
   color: green;
 }
-p .company-info {
-  width: 30%;
+.company-info {
+  margin-bottom: 5%;
+}
+.contact-info {
+  margin-bottom: 8%;
+  font-family: sans-serif;
+}
+footer {
+  font-family: cursive;
+  text-align: center;
 }
