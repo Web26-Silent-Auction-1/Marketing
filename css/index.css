@@ -9,7 +9,6 @@
   font-size: 14px;
   margin-left: 50%;
 }
-/*@mobile: ~"(max-width: 500px)";*/
 * {
   box-sizing: border-box;
 }
@@ -25,6 +24,12 @@
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 h1 {
   font-family: "Fredoka One";
   letter-spacing: 1px;
@@ -32,14 +37,36 @@ h1 {
 .container-home {
   padding-bottom: 5px;
 }
+.container-two {
+  background-color: #ff7f50;
+}
 .container-home img {
-  width: 100vw;
+  width: 98.5vw;
   height: 200px;
-  padding: 10px;
-  align-content: center;
+  margin-right: 5%;
+}
+@media (max-width: 500px) {
+  .container-home img {
+    flex-direction: column;
+    align-items: center;
+    width: 97vw;
+    margin-right: 6%;
+  }
+}
+hr {
+  border: 1px solid black;
 }
 .content-container {
   width: 40%;
+}
+.top-content {
+  width: 100vw;
+}
+.company-info {
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 /*.top-content {
 }
@@ -61,14 +88,63 @@ h1 {
 .button:hover {
   color: green;
 }
-.company-info {
-  margin-bottom: 5%;
-}
 .contact-info {
-  margin-bottom: 8%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   font-family: sans-serif;
+}
+/* About page code below */
+/*
+html,
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 800px;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+*/
+.profile-info {
+  width: 1000px;
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.box {
+  width: 150px;
+  height: 150px;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.box2 {
+  background: red;
+}
+.box3 {
+  background: black;
+}
+.box4 {
+  background: orange;
+}
+.box5 {
+  background: purple;
+}
+.box6 {
+  background: green;
 }
 footer {
   font-family: cursive;
-  text-align: center;
+  flex-wrap: wrap;
+  display: flex;
+  align-content: flex-end;
 }
