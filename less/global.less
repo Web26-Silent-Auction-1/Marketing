@@ -107,7 +107,10 @@ body {
   justify-content: space-between;
   flex-direction: column;
   @media @mobile {
-    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
   }
 }
@@ -129,11 +132,16 @@ body {
   height: 200px;
   background: black;
   display: flex;
+  flex-direction: column;
 
   justify-content: space-evenly;
   align-items: center;
   margin-top: 5%;
   .box-margin();
+  @media @mobile {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 .social-links {
   font-family: "Oswald", sans-serif;
@@ -176,32 +184,32 @@ body {
   background-size: cover;
   margin-bottom: 3%;
 }
-  .box4 {
-    background: url("/Users/philfives/LambdaSchoolWork/Marketing/Bairon_Paz.jpg")
+.box4 {
+  background: url("/Users/philfives/LambdaSchoolWork/Marketing/Bairon_Paz.jpg")
     no-repeat center center;
-    height: 200px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin-bottom: 3%;
-  }
+  height: 200px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 3%;
+}
 
-  .box5 {
-    background: url("/Users/philfives/LambdaSchoolWork/Marketing/phil_fives.jpg");
-    height: 200px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin-bottom: 3%;
-  }
+.box5 {
+  background: url("/Users/philfives/LambdaSchoolWork/Marketing/head_shot (1).jpeg")
+    no-repeat center center;
+  height: 200px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 3%;
+}
 
-  footer {
-    font-family: cursive;
-    flex-wrap: wrap;
-    display: flex;
-    align-content: flex-end;
-    justify-content: center;
-  }
+footer {
+  font-family: cursive;
+  flex-wrap: wrap;
+  display: flex;
+  align-content: flex-end;
+  justify-content: center;
 }
