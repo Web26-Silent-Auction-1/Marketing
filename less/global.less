@@ -4,7 +4,7 @@
 
 .container {
   /*background-color: rgba(0, 0, 255, 0.3);*/
-  position: absolute;
+  position: relative;
   margin: auto;
   top: 0;
   right: 0;
@@ -13,6 +13,7 @@
   /*width: 1000px;*/
   display: flex;
   flex-direction: row;
+  /*background-color: rgba(60, 60, 60, 0.5);*/
   @media @mobile {
     flex-direction: column;
     align-items: center;
@@ -24,16 +25,12 @@ h1 {
   letter-spacing: 1px;
 }
 
-.container-home {
-  padding-bottom: 5px;
-}
-
 .container-two {
   background-color: rgb(255, 127, 80, 0.5);
 }
 
 .container-home img {
-  width: 98.5vw;
+  width: 98.9vw;
   height: 200px;
 
   margin-right: 5%;
@@ -98,47 +95,113 @@ body {
   display: flex;
   justify-content: space-between;
 */
+
+.about-info {
+  text-align: center;
+}
 .profile-info {
-  width: 1000px;
+  width: 200px;
   height: 150px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  flex-direction: column;
+  @media @mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.containers {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: 40%;
+  justify-content: center;
+  @media @mobile {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 .box {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background: black;
   display: flex;
-  justify-content: space-between;
+
+  justify-content: space-evenly;
   align-items: center;
   margin-top: 5%;
   .box-margin();
 }
+.social-links {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+}
+
+.box1 {
+  background-image: url("/Users/philfives/LambdaSchoolWork/Marketing/Joseph_Hayden.jpg");
+  height: 200px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 3%;
+}
+.social-links {
+  font-family: "Oswald", sans-serif;
+}
 
 .box2 {
-  background: @red-box;
+  background: url("/Users/philfives/LambdaSchoolWork/Marketing/Logan_Sorensen.png")
+    no-repeat center center;
+  height: 200px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 3%;
+  /* background-image: url("/Users/philfives/LambdaSchoolWork/Marketing/Logan_Sorensen.png");
+  object-fit: cover;*/
 }
 
 .box3 {
-  background: @black-box;
+  background: url("/Users/philfives/LambdaSchoolWork/Marketing/Josue_rodriguez.jpg")
+    no-repeat center center;
+  height: 200px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 3%;
 }
+  .box4 {
+    background: url("/Users/philfives/LambdaSchoolWork/Marketing/Bairon_Paz.jpg")
+    no-repeat center center;
+    height: 200px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-bottom: 3%;
+  }
 
-.box4 {
-  background: @orange-box;
-}
+  .box5 {
+    background: url("/Users/philfives/LambdaSchoolWork/Marketing/phil_fives.jpg");
+    height: 200px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-bottom: 3%;
+  }
 
-.box5 {
-  background: @purple-box;
-}
-
-.box6 {
-  background: @green-box;
-}
-
-footer {
-  font-family: cursive;
-  flex-wrap: wrap;
-  display: flex;
-  align-content: flex-end;
+  footer {
+    font-family: cursive;
+    flex-wrap: wrap;
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+  }
 }
