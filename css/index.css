@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.silent-auction {
+  color: white;
+}
 .navigation {
   margin-top: 3%;
   margin-bottom: 3%;
@@ -18,6 +25,12 @@
     width: 100%;
   }
 }
+.navigation a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 700;
+}
 * {
   box-sizing: border-box;
 }
@@ -27,7 +40,7 @@
   }
 }
 .container-two {
-  background-color: rgba(60, 60, 60, 0.5);
+  background-color: #262626;
 }
 .container {
   /*background-color: rgba(0, 0, 255, 0.3);*/
@@ -36,6 +49,7 @@
   top: 0;
   right: 0;
   bottom: 0;
+  padding: 0 10%;
   left: 0;
   /*width: 1000px;*/
   display: flex;
@@ -55,8 +69,10 @@ h1 {
   letter-spacing: 1px;
 }
 .container-home img {
-  width: 98.4vw;
-  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  height: 45vh;
+  width: 100%;
   margin-right: 5%;
 }
 @media (max-width: 500px) {
@@ -72,10 +88,12 @@ hr {
   border: 1px solid black;
 }
 .content-container {
-  width: 40%;
-}
-.top-content {
-  width: 100vw;
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 .company-info {
   margin-bottom: 5%;
@@ -83,34 +101,36 @@ hr {
   flex-direction: row;
   flex-wrap: wrap;
 }
-/*.top-content {
+.top-content {
+  margin: 3% auto;
+  width: 50%;
 }
-*/
-.button {
-  display: block;
-  background-color: navy;
+.top-content button {
+  align-items: center;
+  border: none;
+  width: 100%;
+  background-color: SlateBlue;
   cursor: pointer;
-  width: 100px;
-  height: 45px;
-  font-size: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
   border-radius: 10px;
   color: white;
-  align-items: center;
   text-align: center;
   display: flex;
   justify-content: center;
 }
-.button:hover {
-  color: green;
+.top-content button:hover {
+  color: #999999;
 }
 .contact-info {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  text-align: center;
+  margin: 5% auto;
   font-family: sans-serif;
 }
 /* About page code below */
 body {
-  background: lightblue;
+  background: #2e2e2e;
+  color: white;
 }
 /*
 .container {
@@ -190,7 +210,7 @@ body {
   }
 }
 .box1 {
-  background-image: url("/Users/philfives/LambdaSchoolWork/Marketing/Joseph_Hayden.jpg");
+  background-image: url("../joseph_Hayden.jpg");
   height: 200px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -202,7 +222,7 @@ body {
   font-family: "Oswald", sans-serif;
 }
 .box2 {
-  background: url("/Users/philfives/LambdaSchoolWork/Marketing/Logan_Sorensen.png") no-repeat center center;
+  background: url("../Logan_Sorensen.png") no-repeat center center;
   height: 200px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -213,7 +233,7 @@ body {
   object-fit: cover;*/
 }
 .box3 {
-  background: url("/Users/philfives/LambdaSchoolWork/Marketing/Josue_rodriguez.jpg") no-repeat center center;
+  background: url("../Josue_rodriguez.jpg") no-repeat center center;
   height: 200px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -222,7 +242,7 @@ body {
   margin-bottom: 3%;
 }
 .box4 {
-  background: url("/Users/philfives/LambdaSchoolWork/Marketing/Bairon_Paz.jpg") no-repeat center center;
+  background: url("../Bairon_Paz.jpg") no-repeat center center;
   height: 200px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -231,7 +251,7 @@ body {
   margin-bottom: 3%;
 }
 .box5 {
-  background: url("/Users/philfives/LambdaSchoolWork/Marketing/head_shot (1).jpeg") no-repeat center center;
+  background: url("../head_shot (1).jpeg") no-repeat center center;
   height: 200px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
