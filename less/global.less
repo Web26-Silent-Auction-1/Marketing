@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+header {
+  @media @mobile {
+    margin-right: 15%;
+  }
+}
+
 .container {
   /*background-color: rgba(0, 0, 255, 0.3);*/
   position: relative;
@@ -13,10 +19,12 @@
   /*width: 1000px;*/
   display: flex;
   flex-direction: row;
+  max-width: 100%;
   /*background-color: rgba(60, 60, 60, 0.5);*/
   @media @mobile {
     flex-direction: column;
     align-items: center;
+    margin-right: 10%;
   }
 }
 
@@ -30,7 +38,7 @@ h1 {
 }
 
 .container-home img {
-  width: 98.9vw;
+  width: 98.4vw;
   height: 200px;
 
   margin-right: 5%;
@@ -80,14 +88,10 @@ hr {
 
 /* About page code below */
 
-/*
-html,
 body {
-  height: 100%;
-  display: flex;
-  justify-content: center;
+  background: lightblue;
 }
-
+/*
 .container {
   width: 800px;
   height: 100%;
@@ -97,7 +101,11 @@ body {
 */
 
 .about-info {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  @media @mobile {
+    margin-left: 15%;
+  }
 }
 .profile-info {
   width: 200px;
@@ -116,6 +124,8 @@ body {
 }
 
 .containers {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
@@ -146,6 +156,9 @@ body {
 .social-links {
   font-family: "Oswald", sans-serif;
   font-size: 14px;
+  @media @mobile {
+    margin-bottom: 10%;
+  }
 }
 
 .box1 {
